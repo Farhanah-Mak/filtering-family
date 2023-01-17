@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+   
+}
+main{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+.family{
+    /* background-color: red; */
+    padding: 2rem 1rem;
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+.underline{
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btn-container button{
+    padding: 10px 30px;
+    border: none;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: .3s linear;
+}
+.btn-container button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.photo{
+    height: 200px;
+    width: 100%;
+    /* width: 350px; */
+    overflow: hidden;
+    object-fit: cover;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+.section-center{
+    /* padding: 40px 10px; */
+    padding: 30px 0;
+    /* background-color: red; */
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+.person{
+    box-shadow: 2px 3px 4px 6px rgba(0,0,0,0.3);
+    /* border: 2px solid black; */
+    display: grid;
+     gap: 1rem 2rem;
+     max-width: 25rem;
+     justify-items: center;
+     padding: 1em;
+}
+.person-info{
+    /* border: 2px solid blue; */
+    padding: 5px;
+   
+}
+.person-info header{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    /* width: 20%; */
+}
+.person-text{
+    /* border: 2px solid black; */
+    margin-bottom: 0;
+    /* padding: 10px; */
+
+}
+@media (min-width:786px){
+    .person{
+        grid-template-columns: 225px 1fr;
+        gap: 0 1.25rem;
+        place-items: center;
+    }
+    .photo{
+        /* height: 241px; */
+    }
+}
+@media (min-width: 1200px){
+    .section-center{
+        grid-template-columns: 1fr 1fr;
+    }
+}
